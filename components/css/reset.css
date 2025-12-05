@@ -1,0 +1,194 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
+
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap");
+
+/*   ======================== VARIAVEIS CSS ========================  */
+
+:root {
+    /*   =================== COLORS ===================  */
+    --brand-white-primary: hsl(0, 0%, 100%);
+    --brand-grey-light-primary: hsl(201, 29%, 91%);
+    --brand-grey-normal-secundary: hsl(214, 25%, 83%);
+    --brand-grey: hsl(208, 9%, 37%);
+    --brand-blue-primary: hsl(194, 100%, 47%);
+    --brand-black-dark: hsl(0, 0%, 0%);
+}
+
+
+/* ====================== SCROLL BAR ====================== */
+
+::-webkit-scrollbar {
+    width: 0.6rem;
+    border-radius: 0.5rem;
+    background-color: var(--text-gray-header);
+}
+
+::-webkit-scrollbar-thumb {
+    width: 0.6rem;
+    height: 16rem;
+    border-radius: 0.1rem;
+    background-color: var(--text-whithe);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--all-collor-text);
+}
+
+
+/*   ======================== BASE ========================  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: yellow;
+    border-radius: 5rem;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+    background: hsl(201, 29%, 91%);
+}
+
+body {
+    font-family: "Inter Tight", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+object,
+embed,
+video,
+iframe,
+iframe[style] {
+    max-width: 100%;
+    height: auto;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1570px;
+    margin: auto;
+    padding-inline: 1.875rem;
+}
+
+
+/* MENU - MOBILE */
+
+.header .header_content :is(.nav_list #close,
+#hamburguer) {
+    display: none;
+}
+
+
+/*   ======================= BUTTON - SCROLL
+     ==================================== */
+
+.button_scroll {
+    position: fixed;
+    top: 78%;
+    bottom: 0;
+    right: 0px;
+    z-index: 3000;
+    display: block;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    transition: all 0.8s cubic-bezier(0.43, 2, 0.55, 0.27);
+}
+
+.button_scroll.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn_content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.btn_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn_hire {
+    width: 73px;
+    height: 50px;
+    margin: auto;
+    background: var(--button-whats-footer);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+    &:hover {
+        background: var(--border-btn-whats);
+    }
+}
+
+.btn_hire a>i {
+    font-size: 1.7rem;
+    font-weight: 300;
+    color: var(--text-whithe);
+}
+
+.btn_top {
+    align-self: flex-end;
+    overflow: hidden;
+    width: 73px;
+    height: 50px;
+    background: var(--button-btn-backTop);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+    &:hover {
+        background: var(--all-collor-text);
+    }
+}
+
+.btn_top a>i {
+    color: var(--text-whithe);
+    font-size: 1.6rem;
+}
+
+
+/*   ======================= BUTTON - SCROLL
+     ==================================   */
