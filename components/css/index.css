@@ -1,3 +1,21 @@
-p {
-    margin: 0;
+.header {
+  width: 100%;
+  height: 1108px;
+  background: #05132d;
+  background: radial-gradient(circle, #7ec3e0 0%, #1d6a9e 42.5%, #05132d 90%);
+  background-size: 150% 150%;
+  animation: radial 8s ease infinite alternate;
+  overflow: hidden;
+}
+
+@keyframes radial {
+  50% {
+    background-position: 0 100%;
+  }
+  50% {
+    background-position: 50% 30%;
+  }
+  100% {
+    background-position: 0% 10%;
+  }
 }
