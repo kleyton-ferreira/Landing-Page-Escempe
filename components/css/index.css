@@ -23,7 +23,7 @@
 .header .nav {
   width: 100%;
   margin: auto;
-  padding-bottom: 16px;
+  padding-bottom: 12px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -31,5 +31,32 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: 20px;
+  padding: 20px;
+}
+
+.header .content-navbar .navItens {
+  display: flex;
+  grid-gap: 30px;
+}
+
+.header .content-navbar .navItens,
+.header .content-navbar .navButtons,
+.header .content-navbar .navbar-icons {
+  padding-top: 30px;
+}
+
+.header .content-navbar .navItens a,
+.header .content-navbar .navButtons a {
+  color: var(--brand-white-primary);
+  font-weight: 200;
+}
+
+.header .content-navbar .navButtons a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header .content-navbar .navItens a {
+  font-size: 18px;
 }
