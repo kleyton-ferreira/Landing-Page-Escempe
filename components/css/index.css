@@ -89,7 +89,7 @@
   transition: 0.7s ease-in-out;
   &:hover {
     color: var(--brand-white-primary);
-    background: var(--brand-blue-primary);
+    background: var(--brand-blue-borders);
   }
 }
 
@@ -144,13 +144,13 @@
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   &:hover {
-    background: var(--brand-blue-primary);
+    background: var(--brand-blue-borders);
   }
 }
 
 .header .navbar-icons a i {
   font-size: 24px;
-  color: var(--brande-color-ions);
+  color: var(--brand-color-icons);
   -webkit-transition: 0.2s ease-in-out;
   -moz-transition: 0.2s ease-in-out;
   -o-transition: 0.2s ease-in-out;
