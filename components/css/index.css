@@ -20,6 +20,10 @@
   }
 }
 
+.menu-toggle {
+  display: none;
+}
+
 .header .nav {
   width: 100%;
   margin: auto;
@@ -36,7 +40,20 @@
 
 .header .content-navbar .navItens {
   display: flex;
-  grid-gap: 30px;
+  grid-gap: 10px;
+}
+
+.header .content-navbar .navItens li a {
+  padding: 10px 20px;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  &:hover {
+    background: var(--brand-white-primary);
+    color: var(--brand-black-dark);
+  }
 }
 
 .header .content-navbar .navItens,
@@ -45,26 +62,66 @@
   padding-top: 30px;
 }
 
-.header .content-navbar .navItens a,
+.header .content-navbar .navItens li a,
 .header .content-navbar .navButtons a {
-  color: var(--brand-white-primary);
-  font-weight: 200;
-}
-
-.header .content-navbar .navButtons a {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.header .content-navbar .navItens a {
   font-size: 18px;
+  color: var(--brand-white-primary);
+  font-weight: 300;
 }
 
-.menu-toggle {
-  display: none;
+.header .content-navbar .navButtons a {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  padding: 10px 30px;
+  background: transparent;
+  border: 1px solid var(--brand-white-primary);
+  border-radius: 50px;
 }
 
-.main {
-  height: 100vh;
+.header .content-navbar .navButtons a {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 0.7s ease-in-out;
+  -moz-transition: 0.7s ease-in-out;
+  -o-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
+  &:hover {
+    color: var(--brand-white-primary);
+    background: var(--brand-blue-primary);
+  }
+}
+
+.header .content-navbar .navButtons a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #fff, transparent);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  transition: all 0.8s ease-in cubic-bezier(0.43, 2, 0.55, 0.27);
+}
+
+.header .content-navbar .navButtons a:hover::before {
+  content: "";
+  left: 100%;
+}
+
+.header .content-navbar .navButtons:hover a img {
+  animation: translate 0.4s linear infinite;
+}
+
+@keyframes translate {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-2px);
+  }
 }
