@@ -6,11 +6,11 @@ $(".menu-toggle").on("click", function () {
   $page.toggleClass("power");
 });
 
-$(".navBar").on("click", function () {
+$(".navItens").on("click", function () {
   $page.toggleClass("power");
 });
 
-$(".navbar").on("click", function () {
+$(".navItens").on("click", function () {
   $page.removeClass("power");
 });
 
