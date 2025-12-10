@@ -40,7 +40,7 @@
 
 .header .content-navbar .navItens {
   display: flex;
-  grid-gap: 10px;
+  grid-gap: 5px;
 }
 
 .header .content-navbar .navItens li a {
@@ -64,7 +64,7 @@
 
 .header .content-navbar .navItens li a,
 .header .content-navbar .navButtons a {
-  font-size: 18px;
+  font-size: 16px;
   color: var(--brand-white-primary);
   font-weight: 300;
 }
@@ -124,4 +124,39 @@
   100% {
     transform: translateY(-2px);
   }
+}
+
+.header .navbar-icons {
+  display: flex;
+  grid-gap: 8px;
+}
+
+.header .navbar-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--brand-white-primary);
+  text-align: center;
+  line-height: 40px;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  &:hover {
+    background: var(--brand-blue-primary);
+  }
+}
+
+.header .navbar-icons a i {
+  font-size: 24px;
+  color: var(--brande-color-ions);
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.header .navbar-icons a:hover i {
+  color: var(--brand-white-primary);
 }

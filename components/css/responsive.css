@@ -9,6 +9,12 @@
     height: 80px;
     object-fit: contain;
   }
+
+  .header .nav {
+    padding-bottom: 24px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.1);
+  }
+
   .header .content-navbar {
     flex-direction: column;
     padding: 0px;
@@ -127,6 +133,11 @@
   /* =========================== 
      ===========================  
      ===========================  MENU - MOBILE ( structure )  */
+
+  .header .content-navbar .navItens li a,
+  .header .content-navbar .navButtons a {
+    font-size: 18px;
+  }
 
   .header .content-navbar .navButtons a {
     position: relative;
