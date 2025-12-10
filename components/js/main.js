@@ -14,6 +14,14 @@ $(".navItens").on("click", function () {
   $page.removeClass("power");
 });
 
+// let windowWidth = $(window).width();
+// $(".banner").mousemove(function (event) {
+//   let moveX = ($(Window).width() / 2 - event.pageX) * 0.1;
+//   let moveY = ($(Window).height() / 2 - event.pageY) * 0.1;
+//   $(".banner-content").css("margin-left", moveX + "px");
+//   $(".banner-content").css("margin-top", moveY + "px");
+// });
+
 // ============================================
 // ============================================ CAROUSEL-ONE
 // ============================================

@@ -1,11 +1,12 @@
 .header {
+  position: relative;
   width: 100%;
   height: 1108px;
   background: #05132d;
   background: radial-gradient(circle, #7ec3e0 0%, #1d6a9e 42.5%, #05132d 90%);
   background-size: 150% 150%;
   animation: radial 6s ease infinite alternate;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 @keyframes radial {
@@ -72,7 +73,7 @@
 .header .content-navbar .navButtons a {
   position: relative;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   gap: 10px;
   padding: 10px 30px;
   background: transparent;
@@ -159,4 +160,76 @@
 
 .header .navbar-icons a:hover i {
   color: var(--brand-white-primary);
+}
+
+/* BANNER================== */
+
+.banner {
+  position: relative;
+  transform: translateX(-96px);
+}
+.banner .banner-border {
+  position: absolute;
+  z-index: 8;
+  top: 290px;
+  left: 150px;
+  bottom: 0;
+  background: transparent;
+  width: 590px;
+  height: 650px;
+  border-radius: 80px;
+  border-right: 12px solid var(--brand-blue-borders);
+  border-left: 12px solid var(--brand-blue-borders);
+  border-bottom: 12px solid var(--brand-blue-borders);
+}
+
+.banner .banner-border::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: -66px;
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  border: 6px solid var(--brand-blue-borders);
+  border-radius: 25px;
+}
+.banner .banner-border::after {
+  content: "";
+  position: absolute;
+  top: 94%;
+  right: -150px;
+  width: 120px;
+  height: 120px;
+  background: var(--brand-blue-borders);
+  border: 6px solid var(--brand-blue-borders);
+  border-radius: 25px;
+}
+
+.banner .banner-borders {
+  position: absolute;
+  z-index: 1;
+  top: 290px;
+  left: 150px;
+  bottom: 0;
+  background: transparent;
+  width: 590px;
+  height: 650px;
+  border-radius: 80px;
+  border-top: 12px solid var(--brand-blue-borders);
+  border-right: 12px solid var(--brand-blue-borders);
+  border-left: 12px solid var(--brand-blue-borders);
+  border-bottom: 12px solid var(--brand-blue-borders);
+}
+
+.banner .img-banner-content {
+  position: absolute;
+  z-index: 4;
+  top: 127px;
+}
+
+.banner .img-banner-content img {
+  width: 920px;
+  height: 920px;
+  object-fit: contain;
 }

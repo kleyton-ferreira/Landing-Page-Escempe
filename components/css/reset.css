@@ -14,7 +14,7 @@
   --brand-black-dark: hsl(0, 0%, 0%);
   --brand-color-icons: hsl(197, 64%, 24%);
   --brand-blue-secundary: hsl(222, 75%, 32%);
-  --brand-blue-borders: #1186f3;
+  --brand-blue-borders: hsl(209, 90%, 51%);
 }
 
 /* ====================== SCROLL BAR ====================== */
@@ -88,9 +88,10 @@ strong {
 }
 
 .container {
-  max-width: 1660px;
-  margin: auto;
-  padding-inline: 30px;
+  max-width: 1570px;
+  margin: 0 auto;
+  padding-inline: 1.8rem;
+  border: 1px solid red;
 }
 
 /* MENU - MOBILE */
