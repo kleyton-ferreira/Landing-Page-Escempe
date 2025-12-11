@@ -163,72 +163,53 @@
 }
 
 /* BANNER================== */
+.banner-content {
+  max-width: 1630px;
+  margin: auto;
+}
+
 .banner {
+  position: absolute;
+  bottom: 0;
+}
+
+.banner-container {
+  display: flex;
+  align-items: center;
+  grid-gap: 60px;
+}
+
+.banner-img {
   position: relative;
-  transform: translateX(-96px);
-}
-.banner .banner-border {
-  position: absolute;
-  z-index: 8;
-  top: 290px;
-  left: 150px;
-  bottom: 0;
-  background: transparent;
-  width: 590px;
-  height: 650px;
-  border-radius: 80px;
-  border-right: 12px solid var(--brand-blue-borders);
-  border-left: 12px solid var(--brand-blue-borders);
-  border-bottom: 12px solid var(--brand-blue-borders);
+  left: 20px;
+  /* background: red; */
 }
 
-.banner .banner-border::before {
+.banner-img::after {
   content: "";
   position: absolute;
-  top: -60px;
-  left: -66px;
-  width: 60px;
-  height: 60px;
+  top: 16px;
+  left: 0px;
+  width: 70px;
+  height: 70px;
   background: transparent;
-  border: 6px solid var(--brand-blue-borders);
   border-radius: 25px;
+  border: 6px solid var(--brand-blue-borders);
 }
-.banner .banner-border::after {
+
+.banner-img::before {
   content: "";
   position: absolute;
-  top: 94%;
-  right: -150px;
-  width: 120px;
-  height: 120px;
+  bottom: -60px;
+  right: -100px;
+  width: 130px;
+  height: 130px;
+  border-radius: 25px;
   background: var(--brand-blue-borders);
-  border: 6px solid var(--brand-blue-borders);
-  border-radius: 25px;
 }
 
-.banner .banner-borders {
-  position: absolute;
-  z-index: 1;
-  top: 290px;
-  left: 150px;
-  bottom: 0;
-  background: transparent;
-  width: 590px;
-  height: 650px;
-  border-radius: 80px;
-  border-top: 12px solid var(--brand-blue-borders);
-  border-right: 12px solid var(--brand-blue-borders);
-  border-left: 12px solid var(--brand-blue-borders);
-  border-bottom: 12px solid var(--brand-blue-borders);
-}
-
-.banner .img-banner-content {
-  position: absolute;
-  z-index: 4;
-  top: 127px;
-}
-
-.banner .img-banner-content img {
-  width: 920px;
-  height: 920px;
-  object-fit: contain;
+.banner-img img {
+  width: 660px;
+  height: 780px;
+  object-fit: cover;
 }
