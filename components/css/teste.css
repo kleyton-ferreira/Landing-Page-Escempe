@@ -1,0 +1,63 @@
+.banner {
+  position: relative;
+  transform: translateX(-96px);
+}
+.banner .banner-border {
+  position: absolute;
+  z-index: 8;
+  top: 240px;
+  left: 150px;
+  bottom: 0;
+  background: transparent;
+  width: 700px;
+  height: 700px;
+  border-radius: 80px;
+  border-right: 12px solid var(--brand-blue-borders);
+  border-left: 12px solid var(--brand-blue-borders);
+  border-bottom: 12px solid var(--brand-blue-borders);
+}
+
+.banner .banner-border::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: -66px;
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  border: 6px solid var(--brand-blue-borders);
+  border-radius: 25px;
+}
+.banner .banner-border::after {
+  content: "";
+  position: absolute;
+  top: 94%;
+  right: -150px;
+  width: 120px;
+  height: 120px;
+  background: var(--brand-blue-borders);
+  border: 6px solid var(--brand-blue-borders);
+  border-radius: 25px;
+}
+
+.banner .banner-borders {
+  position: absolute;
+  z-index: 1;
+  top: 240px;
+  left: 150px;
+  bottom: 0;
+  background: transparent;
+  width: 700px;
+  height: 700px;
+  border-radius: 80px;
+  border-top: 12px solid var(--brand-blue-borders);
+  border-right: 12px solid var(--brand-blue-borders);
+  border-left: 12px solid var(--brand-blue-borders);
+  border-bottom: 12px solid var(--brand-blue-borders);
+}
+
+.banner .img-banner-content {
+  position: relative;
+  top: 77px;
+  z-index: 4;
+}

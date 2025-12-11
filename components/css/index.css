@@ -6,7 +6,6 @@
   background: radial-gradient(circle, #7ec3e0 0%, #1d6a9e 42.5%, #05132d 90%);
   background-size: 150% 150%;
   animation: radial 6s ease infinite alternate;
-  /* overflow: hidden; */
 }
 
 @keyframes radial {
@@ -162,11 +161,8 @@
   color: var(--brand-white-primary);
 }
 
-/* BANNER================== */
-.banner-content {
-  max-width: 1630px;
-  margin: auto;
-}
+/* BANNER OF HEAER ================== 
+                   ==================*/
 
 .banner {
   position: absolute;
@@ -176,25 +172,26 @@
 .banner-container {
   display: flex;
   align-items: center;
+  justify-content: center;
   grid-gap: 60px;
 }
 
 .banner-img {
   position: relative;
   left: 20px;
-  /* background: red; */
 }
 
 .banner-img::after {
   content: "";
   position: absolute;
-  top: 16px;
+  top: 5%;
   left: 0px;
   width: 70px;
   height: 70px;
   background: transparent;
   border-radius: 25px;
   border: 6px solid var(--brand-blue-borders);
+  animation: border 10s linear infinite;
 }
 
 .banner-img::before {
@@ -206,10 +203,61 @@
   height: 130px;
   border-radius: 25px;
   background: var(--brand-blue-borders);
+  animation: border 8s linear infinite;
+}
+
+@keyframes border {
+  0% {
+    transform: scale(0) translateY(0) rotate(0);
+    opacity: 0;
+  }
+  0% {
+    transform: scale(1) translateX(0px) rotate(360deg);
+    opacity: 1;
+  }
 }
 
 .banner-img img {
   width: 660px;
   height: 780px;
   object-fit: cover;
+}
+
+.banner-description {
+  color: var(--brand-white-primary);
+}
+
+.banner .banner-description h1 {
+  font-size: 60px;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+
+.banner-description h1 span {
+  font-weight: 200;
+}
+
+.banner-description p {
+  font-size: 22px;
+  font-weight: 200;
+}
+
+.banner-button {
+  padding-top: 40px;
+}
+
+.banner-button a {
+  font-size: 18px;
+  background: var(--brand-blue-secundary);
+  padding: 10px 30px;
+  border-radius: 30px;
+  color: var(--brand-white-primary);
+  font-weight: 200;
+}
+
+.banner-button a i {
+  font-size: 24px;
+  position: relative;
+  top: 3px;
+  left: 10px;
 }
