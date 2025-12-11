@@ -242,6 +242,10 @@
   font-weight: 200;
 }
 
+.banner-description p span {
+  display: block;
+}
+
 .banner-button {
   padding-top: 40px;
 }
