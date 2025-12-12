@@ -169,19 +169,19 @@
   bottom: 0;
 }
 
-.banner-container {
+.banner .banner-container {
   display: flex;
   align-items: center;
   justify-content: center;
   grid-gap: 60px;
 }
 
-.banner-img {
+.banner .banner-img {
   position: relative;
   left: 20px;
 }
 
-.banner-img::after {
+.banner .banner-img::after {
   content: "";
   position: absolute;
   top: 5%;
@@ -194,7 +194,7 @@
   animation: border 10s linear infinite;
 }
 
-.banner-img::before {
+.banner .banner-img::before {
   content: "";
   position: absolute;
   bottom: -60px;
@@ -217,13 +217,13 @@
   }
 }
 
-.banner-img img {
+.banner .banner-img img {
   width: 660px;
   height: 780px;
   object-fit: cover;
 }
 
-.banner-description {
+.banner .banner-description {
   color: var(--brand-white-primary);
 }
 
@@ -233,24 +233,24 @@
   margin-bottom: 20px;
 }
 
-.banner-description h1 span {
+.banner .banner-description h1 span {
   font-weight: 200;
 }
 
-.banner-description p {
+.banner .banner-description p {
   font-size: 18px;
   font-weight: 200;
 }
 
-.banner-description p span {
+.banner .banner-description p span {
   display: block;
 }
 
-.banner-button {
+.banner .banner-button {
   padding-top: 40px;
 }
 
-.banner-button a {
+.banner .banner-button a {
   font-size: 18px;
   background: var(--brand-blue-secundary);
   padding: 10px 30px;
@@ -269,13 +269,13 @@
 /* MAIN - SECTION  ================== 
                    ==================*/
 
-.main-contant {
+.main-content {
   width: 100%;
   height: 600px;
   background-color: var(--brand-grey-light-primary);
 }
 
-.main-contant .main-container {
+.main-content .main-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -283,30 +283,30 @@
   text-align: center;
 }
 
-.main-contant .main-title {
+.main-content .main-title {
   padding-top: 136px;
 }
 
-.main-contant .main-title h2 {
+.main-content .main-title h2 {
   font-size: 26px;
   color: var(--brand-blue-primary);
 
   font-weight: 400;
 }
 
-.main-contant .main-title h2 span {
+.main-content .main-title h2 span {
   display: block;
 }
 
-.main-contant .main-description {
+.main-content .main-description {
   margin-top: 16px;
 }
 
-.main-contant .main-description p {
+.main-content .main-description p {
   font-size: 32px;
   color: var(--brand-blue-secundary);
 }
 
-.main-contant .main-description p span {
+.main-content .main-description p span {
   display: block;
 }
