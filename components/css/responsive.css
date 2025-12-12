@@ -140,18 +140,6 @@
     font-size: 18px;
   }
 
-  .header .content-navbar .navButtons a {
-    position: relative;
-    z-index: 1002;
-    display: flex;
-    align-items: flex-end;
-    gap: 10px;
-    padding: 10px 30px;
-    background: transparent;
-    border: 1px solid var(--brand-white-primary);
-    border-radius: 50px;
-  }
-
   /* =========================== 
      ===========================  
      ===========================  BANNER    
@@ -176,7 +164,7 @@
   .banner-img::before {
     content: "";
     position: absolute;
-    bottom: 0px;
+    bottom: -30px;
     right: 6px;
     width: 80px;
     height: 80px;
@@ -196,12 +184,33 @@
     line-height: 35px;
   }
   .banner-description p {
-    width: 100%;
+    width: 80%;
     font-size: 20px;
+    display: inline-block;
   }
 
   .banner-button {
     width: 100%;
+  }
+
+  /* =========================== 
+     ===========================  
+     ===========================  MAIN    
+  */
+
+  .main-contant .main-title {
+    padding-top: 46px;
+  }
+
+  .main-contant .main-title h2 {
+    font-size: 20px;
+  }
+  .main-contant .main-description {
+    width: 100%;
+    text-align: left;
+  }
+  .main-contant .main-description p {
+    font-size: 22px;
   }
 }
 

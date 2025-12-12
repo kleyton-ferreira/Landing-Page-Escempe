@@ -161,7 +161,7 @@
   color: var(--brand-white-primary);
 }
 
-/* BANNER OF HEAER ================== 
+/* BANNER OF HEADER ================== 
                    ==================*/
 
 .banner {
@@ -228,7 +228,7 @@
 }
 
 .banner .banner-description h1 {
-  font-size: 60px;
+  font-size: 56px;
   line-height: 60px;
   margin-bottom: 20px;
 }
@@ -238,7 +238,7 @@
 }
 
 .banner-description p {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 200;
 }
 
@@ -266,16 +266,13 @@
   left: 10px;
 }
 
+/* MAIN - SECTION  ================== 
+                   ==================*/
+
 .main-contant {
   width: 100%;
   height: 600px;
   background-color: var(--brand-grey-light-primary);
-  background-attachment: fixed;
-  background-position: 50% 50%;
-  background-size: cover;
-  -webekit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
 }
 
 .main-contant .main-container {
@@ -293,7 +290,7 @@
 .main-contant .main-title h2 {
   font-size: 26px;
   color: var(--brand-blue-primary);
-  margin-bottom: 16px;
+
   font-weight: 400;
 }
 
@@ -302,9 +299,14 @@
 }
 
 .main-contant .main-description {
-  color: var(--brand-blue-secundary);
+  margin-top: 16px;
 }
 
 .main-contant .main-description p {
   font-size: 32px;
+  color: var(--brand-blue-secundary);
+}
+
+.main-contant .main-description p span {
+  display: block;
 }
