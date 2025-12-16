@@ -288,6 +288,19 @@
     top: 146%;
     left: 0%;
   }
+
+  /* =========================== 
+     ===========================  
+     ===========================  MAIN - BANNER ( TWO )     
+  */
+
+  .main-banner {
+    background-image: url(../assets/imgs/banner.png);
+    height: 280px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+  }
 }
 
 /* =========================== RESPONSIVE - MOBILE (HORIZONTAL) */

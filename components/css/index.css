@@ -473,7 +473,7 @@
 .main-carousel {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 460px;
   background-color: var(--brand-grey-light-primary);
 }
 
@@ -481,7 +481,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-top: 146px;
+  padding-top: 96px;
 }
 
 .carousel-content {
@@ -539,4 +539,14 @@
   border: 2px solid var(--brand-dots);
   background: var(--brand-dots);
   margin-block: 106px;
+}
+
+/*  MAIN - BANNER ( TWO )    ================== 
+                             ==================*/
+
+.main-banner {
+  background-image: url(../assets/imgs/banner.png);
+  height: 560px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
