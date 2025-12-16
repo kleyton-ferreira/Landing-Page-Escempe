@@ -222,17 +222,27 @@
   */
 
   .info {
-    height: 880px;
+    height: 780px;
     /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
   }
   .info .info-container {
     flex-direction: column;
-    grid-gap: 80px;
+    grid-gap: 60px;
     padding: 120px 40px;
   }
   .info-icon {
-    width: 340px;
-    height: 340px;
+    width: 250px;
+    height: 250px;
+  }
+  .info-icon::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    border-radius: 50%;
+    border: solid 12px transparent;
+    border-right-color: var(--brand-blue-secundary);
+    opacity: 0;
   }
   .info-icon::before {
     content: "";
@@ -241,8 +251,8 @@
   }
 
   .info .info-icon img {
-    width: 180px;
-    height: 160px;
+    width: 136px;
+    height: 136px;
   }
   .info-description h2 {
     font-size: 16px;
