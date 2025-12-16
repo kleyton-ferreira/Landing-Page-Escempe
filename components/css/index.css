@@ -467,3 +467,70 @@
 .info-description p span {
   display: block;
 }
+
+/* MAIN - SECTION - CAROUSEL ================== 
+                             ==================*/
+
+.main-carousel {
+  width: 100%;
+  height: 300px;
+  background-color: var(--brand-grey-light-primary);
+}
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 146px;
+}
+
+.carousel-content {
+  margin-bottom: 20px;
+}
+
+.carousel-number {
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--brande-blue-border-bottom);
+}
+.carousel-number h3 {
+  position: relative;
+  right: 220px;
+  font-weight: 300;
+  font-size: 96px;
+  color: var(--brand-white-primary);
+}
+
+.carousel-number h2 {
+  font-weight: 300;
+  font-size: 96px;
+  color: var(--brand-white-primary);
+}
+
+.carousel-description {
+  align-self: flex-end;
+  position: relative;
+  right: 60px;
+}
+
+.carousel-description p {
+  font-size: 18px;
+  color: var(--brand-blue-secundary);
+  font-weight: 300;
+}
+
+.carousel-description p span {
+  display: flex;
+}
+
+.main-carousel .carousel_one .slick-dots li.slick-active button {
+  border: 2px solid var(--brand-dots);
+  background: transparent;
+}
+.main-carousel .carousel_one .slick-dots li button {
+  border: 2px solid var(--brand-dots);
+  background: var(--brand-dots);
+  margin-block: 106px;
+  translate: -570px;
+}

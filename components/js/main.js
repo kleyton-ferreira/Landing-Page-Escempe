@@ -29,8 +29,8 @@ $(".carousel_one").slick({
   dots: true,
   infinite: true,
   speed: 300,
-  slidesToShow: 6,
-  slidesToScroll: 3,
+  slidesToShow: 1,
+  slidesToScroll: 1,
   pagination: true,
   autoplay: true,
   responsive: [

@@ -11,11 +11,12 @@
   --brand-grey-normal-secundary: hsl(214, 25%, 83%);
   --brand-grey: hsl(208, 9%, 37%);
   --brand-blue-primary: hsl(194, 100%, 47%);
-
+  --brande-blue-border-bottom: hsl(194, 100%, 47%);
   --brand-black-dark: hsl(0, 0%, 0%);
   --brand-color-icons: hsl(197, 64%, 24%);
   --brand-blue-secundary: hsl(222, 75%, 32%);
   --brand-blue-borders: hsl(209, 90%, 51%);
+  --brand-dots: hsl(194, 100%, 47%);
 }
 
 /* ====================== SCROLL BAR ====================== */
