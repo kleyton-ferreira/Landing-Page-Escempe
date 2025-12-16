@@ -256,7 +256,16 @@
   padding: 10px 30px;
   border-radius: 30px;
   color: var(--brand-white-primary);
-  font-weight: 200;
+  font-weight: 300;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  &:hover {
+    background: var(--brand-grey-light-primary);
+    color: var(--brand-black-dark);
+    letter-spacing: 2px;
+  }
 }
 
 .banner-button a i {
@@ -389,10 +398,12 @@
   -moz-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+  transition: all 2s cubic-bezier(0.43, 2, 0.55, 0.27);
 }
 
 .info-icon:hover::before {
   opacity: 0;
+  transition: all 0.9s cubic-bezier(0.43, 2, 0.55, 0.27);
 }
 
 .info-icon:hover::after {
