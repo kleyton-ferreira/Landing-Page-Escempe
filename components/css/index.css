@@ -550,3 +550,92 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* MAIN - CUSTTOMERS!     ================== 
+                          ==================*/
+
+.customers {
+  width: 100%;
+  height: 760px;
+  background-color: var(--brand-grey-light-primary);
+}
+
+.customers .customers-content {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 24px;
+  padding-top: 126px;
+}
+
+.customers .customers-title {
+  color: var(--brand-blue-primary);
+}
+
+.customers .customers-title h2 {
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 80px;
+}
+
+.customers .customers-description {
+  margin-bottom: 60px;
+}
+
+.customers .customers-description p {
+  display: flex;
+  align-items: center;
+  grid-gap: 12px;
+  margin-bottom: 12px;
+  color: var(--brand-grey);
+  font-size: 22px;
+}
+
+.customers .customers-packages {
+  width: 100%;
+  height: 130px;
+  background: var(--brand-blue-secundary);
+  border-radius: 300px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.customers-packages {
+  color: var(--brand-white-primary);
+}
+
+.customers-packages .packages-title h2 {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.customers-packages .packages-title h2 span {
+  display: block;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.customers-packages .packages-description,
+.customers-packages .packages-button {
+  padding-top: 20px;
+}
+
+.customers-packages .packages-description p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.customers-packages .packages-description p span {
+  display: block;
+}
+
+.customers-packages .packages-button button {
+  background: var(--brand-white-primary);
+  padding: 10px 36px;
+  border-radius: 300px;
+  color: var(--brand-blue-secundary);
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
