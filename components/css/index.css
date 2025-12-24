@@ -549,7 +549,7 @@
 }
 
 /* MAIN - CUSTOMERS!     ================== 
-                          ==================*/
+                         ==================*/
 
 .customers {
   width: 100%;
@@ -642,4 +642,102 @@
     background: rgba(255, 255, 255, 0.7);
     color: var(--brand-black-dark);
   }
+}
+
+/* MAIN - banner-two!    ================== 
+                         ==================*/
+
+.banner-two {
+  position: relative;
+  width: 100%;
+  height: 416px;
+  background: radial-gradient(
+    45.38% 159.43% at 29.32% 41.39%,
+    #7ec3e0 0%,
+    #379ee3 51.44%,
+    #05132d 100%
+  );
+  margin-top: 320px;
+}
+
+.banner-two-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  grid-gap: 90px;
+}
+
+.banner-two-img {
+  position: relative;
+  z-index: 1;
+  translate: 0% -15%;
+}
+
+.banner-two-img-one {
+  position: relative;
+}
+
+.banner-two-img-one::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: -6%;
+  left: 0;
+  width: 103%;
+  height: 102%;
+  background: transparent;
+  border: 12px solid var(--brand-blue-borders);
+  border-radius: 80px;
+}
+
+.banner-two-img::after {
+  content: "";
+  position: absolute;
+  top: -22%;
+  left: -3%;
+  width: 70px;
+  height: 70px;
+  background: transparent;
+  border-radius: 25px;
+  border: 6px solid var(--brand-blue-borders);
+  animation: border 10s linear infinite;
+}
+
+.banner-two-img::before {
+  content: "";
+  position: absolute;
+  bottom: -110px;
+  right: -140px;
+  width: 120px;
+  height: 130px;
+  border-radius: 25px;
+  background: var(--brand-blue-borders);
+  animation: border 10s linear infinite;
+}
+
+.banner-two-img img {
+  width: 600px;
+  height: 600px;
+  object-fit: contain;
+  translate: 3% 0;
+}
+
+.banner-two-description,
+.banner-two-title {
+  color: var(--brand-white-primary);
+  translate: 0% -20%;
+  margin: 26px 0;
+}
+
+.banner-two-description h2 {
+  font-size: 46px;
+}
+
+.banner-two-title p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.banner-two-title p span {
+  display: block;
 }
