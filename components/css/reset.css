@@ -24,18 +24,18 @@
 ::-webkit-scrollbar {
   width: 0.6rem;
   border-radius: 0.5rem;
-  background-color: var(--text-gray-header);
+  background-color: var(--brand-grey);
 }
 
 ::-webkit-scrollbar-thumb {
   width: 0.6rem;
   height: 16rem;
   border-radius: 0.1rem;
-  background-color: var(--text-whithe);
+  background-color: var(--brand-blue-secundary);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--all-collor-text);
+  background-color: var(--brand-color-icons);
 }
 
 /*   ======================== BASE ========================  */

@@ -133,12 +133,12 @@
 
 .header .navbar-icons a {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   background: var(--brand-white-primary);
   text-align: center;
-  line-height: 40px;
+  line-height: 36px;
   -webkit-transition: 0.5s ease-in-out;
   -moz-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
@@ -149,7 +149,7 @@
 }
 
 .header .navbar-icons a i {
-  font-size: 24px;
+  font-size: 20px;
   color: var(--brand-color-icons);
   -webkit-transition: 0.2s ease-in-out;
   -moz-transition: 0.2s ease-in-out;
@@ -173,7 +173,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  grid-gap: 60px;
+  grid-gap: 80px;
 }
 
 .banner .banner-img {
@@ -185,7 +185,7 @@
   content: "";
   position: absolute;
   top: 5%;
-  left: 0px;
+  left: -3.6%;
   width: 70px;
   height: 70px;
   background: transparent;
@@ -228,8 +228,8 @@
 }
 
 .banner .banner-description h1 {
-  font-size: 56px;
-  line-height: 60px;
+  font-size: 52px;
+  line-height: 52px;
   margin-bottom: 20px;
 }
 
@@ -238,7 +238,7 @@
 }
 
 .banner .banner-description p {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 200;
 }
 
@@ -251,7 +251,7 @@
 }
 
 .banner .banner-button a {
-  font-size: 18px;
+  font-size: 17px;
   background: var(--brand-blue-secundary);
   padding: 10px 30px;
   border-radius: 30px;
@@ -310,7 +310,7 @@
 }
 
 .main-content .main-description p {
-  font-size: 32px;
+  font-size: 30px;
   color: var(--brand-blue-secundary);
 }
 
@@ -446,8 +446,8 @@
 }
 
 .info-description h2 {
-  font-weight: 300;
   font-size: 18px;
+  font-weight: 300;
   letter-spacing: 10px;
 }
 
@@ -457,7 +457,7 @@
 }
 
 .info-description p {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 200;
 }
 
@@ -569,8 +569,8 @@
 
 .customers .customers-title h2 {
   font-weight: 400;
-  font-size: 80px;
-  line-height: 80px;
+  font-size: 64px;
+  line-height: 64px;
 }
 
 .customers .customers-description {
@@ -583,7 +583,7 @@
   grid-gap: 12px;
   margin-bottom: 12px;
   color: var(--brand-grey);
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .customers .customers-packages {
@@ -602,7 +602,7 @@
 }
 
 .customers-packages .packages-title h2 {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 200;
 }
 
@@ -614,11 +614,11 @@
 
 .customers-packages .packages-description,
 .customers-packages .packages-button {
-  padding-top: 20px;
+  padding-top: 18px;
 }
 
 .customers-packages .packages-description p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
 }
 
