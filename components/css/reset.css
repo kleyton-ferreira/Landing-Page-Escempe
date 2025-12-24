@@ -6,17 +6,17 @@
 
 :root {
   /*   =================== COLORS ===================  */
-  --brand-white-primary: hsl(0, 0%, 100%);
-  --brand-grey-light-primary: hsl(201, 29%, 91%);
-  --brand-grey-normal-secundary: hsl(214, 25%, 83%);
-  --brand-grey: hsl(208, 9%, 37%);
-  --brand-blue-primary: hsl(194, 100%, 47%);
-  --brande-blue-border-bottom: hsl(194, 100%, 47%);
-  --brand-black-dark: hsl(0, 0%, 0%);
-  --brand-color-icons: hsl(197, 64%, 24%);
-  --brand-blue-secundary: hsl(222, 75%, 32%);
-  --brand-blue-borders: hsl(209, 90%, 51%);
-  --brand-dots: hsl(194, 100%, 47%);
+  --brand-white-primary: #ffffff;
+  --brand-grey-light-primary: #e1eaef;
+  --brand-grey-normal-secundary: #c9d2de;
+  --brand-grey: #565f67;
+  --brand-blue-primary: #00b8f0;
+  --brande-blue-border-bottom: #00b8f0;
+  --brand-black-dark: #000000;
+  --brand-color-icons: #164e64;
+  --brand-blue-secundary: #14398f;
+  --brand-blue-borders: #1286f3;
+  --brand-dots: #00b8f0;
 }
 
 /* ====================== SCROLL BAR ====================== */
@@ -59,6 +59,7 @@ html {
 
 body {
   font-family: "Inter Tight", sans-serif;
+  background: var(--brand-grey-normal-secundary);
 }
 
 ul {

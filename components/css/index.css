@@ -281,7 +281,6 @@
 .main-content {
   width: 100%;
   height: 480px;
-  background-color: var(--brand-grey-light-primary);
 }
 
 .main-content .main-container {
@@ -299,7 +298,7 @@
 .main-content .main-title h2 {
   font-size: 26px;
   color: var(--brand-blue-primary);
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .main-content .main-title h2 span {
@@ -329,7 +328,6 @@
   background: radial-gradient(circle, #7ec3e0 0%, #1d6a9e 0%, #05132d 60%);
   background-size: 150% 150%;
   animation: radial 12s ease infinite alternate;
-  /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
 }
 
 .info .info-container {
@@ -474,7 +472,6 @@
   position: relative;
   width: 100%;
   height: 460px;
-  background-color: var(--brand-grey-light-primary);
 }
 
 .carousel-container {
@@ -638,4 +635,12 @@
   font-size: 16px;
   border: none;
   cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  &:hover {
+    background: rgba(255, 255, 255, 0.7);
+    color: var(--brand-black-dark);
+  }
 }
