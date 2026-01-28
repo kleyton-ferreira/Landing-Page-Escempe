@@ -15,6 +15,17 @@ $(".navItens").on("click", function () {
 });
 
 // ============================================
+// ============================================ SCROOL SUAVE
+// ============================================
+const lenis = new Lenis();
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+
+// ============================================
 // ============================================ CAROUSEL-ONE
 // ============================================
 $(".carousel_one").slick({
@@ -29,7 +40,7 @@ $(".carousel_one").slick({
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 2,
         infinite: true,
         dots: true,
