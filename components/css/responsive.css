@@ -63,7 +63,8 @@
     left: 50%;
     margin-top: -24px;
     margin-left: -24px;
-    transition: transform 0.7s cubic-bezier(1, 0.005, 0.25, 1),
+    transition:
+      transform 0.7s cubic-bezier(1, 0.005, 0.25, 1),
       -webkit-transform 0.7s cubic-bezier(1, 0.005, 0.25, 1);
   }
   .menu-toggle .menu_open {
@@ -85,7 +86,8 @@
   .navItens li {
     margin-bottom: 30px;
     transform: translateX(-300px);
-    transition: transform 0.7s cubic-bezier(1, 0.005, 0.24, 1),
+    transition:
+      transform 0.7s cubic-bezier(1, 0.005, 0.24, 1),
       -webkit-transform 0.7s cubic-bezier(1, 0.005, 0.24, 1);
   }
 
@@ -119,7 +121,8 @@
   }
   .power .navItens li {
     transform: translateX(0);
-    transition: transform 0.35s 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    transition:
+      transform 0.35s 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275),
       -webkit-transform 0.35s 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
   .power .navItens li:nth-child(2) {
@@ -316,6 +319,30 @@
 /* =========================== RESPONSIVE - MOBILE (HORIZONTAL) */
 
 @media screen and (orientation: landscape) and (max-width: 1024px) {
+  .header {
+    width: 200%;
+  }
+  .main-content {
+    width: 200%;
+    background: var(--brand-grey-normal-secundary);
+  }
+  .info {
+    width: 200%;
+  }
+  .main-carousel {
+    width: 200%;
+    background: var(--brand-grey-normal-secundary);
+  }
+  .main-banner {
+    width: 200%;
+  }
+  .customers {
+    width: 200%;
+    background: var(--brand-grey-normal-secundary);
+  }
+  .banner-two {
+    width: 200%;
+  }
 }
 
 /* =========================== RESPONSIVE - TABLET */
